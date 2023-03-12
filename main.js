@@ -107,6 +107,7 @@ function showWeather(data) {
   windSpeed.innerHTML = `швидкість вітру <span>${Math.round(data.wind.speed)}</span> м/сек`;
   windDegText.innerHTML = 'напрям вітру ';
   document.querySelector('.weather__wind>img').style.transform = `rotate(${data.wind.deg}deg)`;
+  document.querySelector('.weather__wind>img').style.marginLeft = `15px`;
   pressure.innerHTML = `атмосферний тиск <span>${data.main.pressure}</span> гПА`;
 }
 
