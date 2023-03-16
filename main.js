@@ -78,13 +78,9 @@ function getWeather() {
 // функція отримання дати
 function getCurrentDate() {
   let date = new Date();
-  let year = date.getFullYear();
-  let mounth = date.getMonth() + 1;
-  if (mounth < 10) mounth = `0${mounth}`;
-  let day = date.getDate();
-  if (day < 10) day = `0${day}`;
-  return `${day}:${mounth}:${year}`;
+  return date.toLocaleDateString()
 }
+setInterval(getCurrentDate, 1000)
 
 // функція показу на сторінку
 function showWeather(data) {
