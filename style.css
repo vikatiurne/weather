@@ -1,7 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
 .weather__card {
   margin: 0 auto;
   padding: 20px;
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
   border: none;
   border-radius: 10px;
